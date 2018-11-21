@@ -6454,4 +6454,29 @@ footer img {
 .home-news .item h1 {
   padding: 0; }
 
+.home-clients {
+  background-image: url(../img/baner.png);
+  min-height: 500px; }
+  .home-clients h1 {
+    color: white;
+    padding-top: 5rem; }
+    .home-clients h1 span {
+      color: #dfb428;
+      margin-right: 1rem; }
+    .home-clients h1 span.dk {
+      display: block;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 0.5rem; }
+    .home-clients h1:after {
+      display: block;
+      content: '';
+      width: 90px;
+      height: 4px;
+      background: #dfb428;
+      border-radius: 25px; }
+  .home-clients .text p {
+    color: white; }
+
 /*# sourceMappingURL=main.css.map */

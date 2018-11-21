@@ -6329,8 +6329,10 @@ header {
   header .navbar {
     padding-right: 0;
     padding-left: 0; }
-  header .navbar-brand img {
-    max-height: 2rem; }
+  header .navbar-toggler {
+    background: #dfb428; }
+    header .navbar-toggler img {
+      max-height: 2rem; }
   @media (min-width: 768px) {
     header .navbar-brand img {
       max-height: 3rem; } }
@@ -6416,7 +6418,9 @@ footer img {
 
 .home-news {
   background-image: url(../img/bg-house.png);
-  min-height: 500px; }
+  min-height: 500px;
+  background-attachment: fixed;
+  background-size: cover; }
   .home-news .text {
     width: 50%;
     margin: 0 auto;

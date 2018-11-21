@@ -6457,26 +6457,40 @@ footer img {
 .home-clients {
   background-image: url(../img/baner.png);
   min-height: 500px; }
-  .home-clients h1 {
+  .home-clients .item h1 {
     color: white;
     padding-top: 5rem; }
-    .home-clients h1 span {
+    .home-clients .item h1 span {
       color: #dfb428;
       margin-right: 1rem; }
-    .home-clients h1 span.dk {
+    .home-clients .item h1 span.dk {
       display: block;
       width: 100%;
       display: flex;
       justify-content: center;
       margin-top: 0.5rem; }
-    .home-clients h1:after {
+    .home-clients .item h1:after {
       display: block;
       content: '';
       width: 90px;
       height: 4px;
       background: #dfb428;
       border-radius: 25px; }
-  .home-clients .text p {
-    color: white; }
+  .home-clients .item .text p {
+    color: #bdbdbd; }
+  .home-clients .item .text a {
+    color: black;
+    padding: 7px 40px;
+    background: #f2c73e;
+    border-radius: 25px;
+    transition: 0.8s; }
+    .home-clients .item .text a:hover {
+      background: #f2c73e7a;
+      transition: 0.8s;
+      color: #f2c73e; }
+  .home-clients .item .box {
+    width: 500px;
+    height: 500px;
+    background: red; }
 
 /*# sourceMappingURL=main.css.map */

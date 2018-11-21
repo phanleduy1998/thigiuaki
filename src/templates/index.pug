@@ -1,0 +1,69 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	section.home-slider
+		.owl-carousel.owl-theme
+			.item
+				img(src="./img/baner.png", alt="")
+				.title
+					.container
+						.row
+							.col-md-6.offset-md-3.text-center
+								h2 Chúng tôi là FullStack Vietnam
+								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+								a.btn.nut CLICK HERE
+			.item
+				img(src="./img/baner.png", alt="")
+				.title
+					.container
+						.row
+							.col-md-6.offset-md-3.text-center
+								h2 Chúng tôi là FullStack Vietnam
+								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+								a.btn.nut CLICK HERE
+			.item
+				img(src="./img/baner.png", alt="")
+				.title
+					.container
+						.row
+							.col-md-6.offset-md-3.text-center
+								h2 Chúng tôi là FullStack Vietnam
+								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+								a.btn.nut CLICK HERE
+	section.home-news
+		h1.text-center
+			span WHY
+			| CHOOSE US
+			span.dk 
+		.text 
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro suscipit amet illum ullam, aliquam ex laborum. Facere ab maiores quibusdam sint ipsa, corporis error dignissimos mollitia totam quod maxime 
+		.container
+			.row
+				.col-sm-4.text-center
+					.item
+						i.fa.fa-desktop
+						h1  FullStack Vietnam
+						P Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia vitae error rerum 
+				.col-sm-4.text-center
+					.item
+						i.fa.fa-book
+						h1  FullStack Vietnam
+						P Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia vitae error rerum 
+				.col-sm-4.text-center
+					.item
+						i.fa.fa-shopping-bag
+						h1  FullStack Vietnam
+						P Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia vitae error rerum 
+
+	section.home-clients.mt-5
+		.container
+			.row
+					

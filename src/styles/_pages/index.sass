@@ -1,0 +1,111 @@
+/////////////////////////////////
+// Phần Slider
+/////////////////////////////////
+.home-slider
+	.owl-carousel
+		.item
+			img
+			.title
+				background: #00000026
+				padding: 1rem 0
+				a
+					color: white
+					padding: 7px 40px 
+					background: #f2c73e
+					border-radius: 25px 
+					transition: 0.8s
+		+media-breakpoint-up(md)
+			.item
+				position: relative
+				img
+				.title
+					position: absolute
+					width: 100%
+					height: 60%
+					bottom: 0
+					display: flex
+					justify-content: center
+					align-items: center
+					h2,p 
+						color: white
+					a
+						color: white
+						padding: 7px 40px 
+						background: #f2c73e
+						border-radius: 25px 
+						transition: 0.8s
+						&:hover
+							background: #f2c73e7a 
+							transition: 0.8s 
+							color: #f2c73e
+// ................................
+.home-slider
+	.owl-carousel
+		.owl-nav
+			margin: 0
+			button.owl-prev,
+			button.owl-next
+				background: #f2c73e 
+				width: 2rem
+				height: 2rem
+				text-align: center
+				line-height: 2rem
+				span 
+					font-size: 1.8rem
+		+media-breakpoint-up(sm)
+			.owl-dots
+				position: absolute
+				bottom: 0
+				width: 100%
+				margin: 0 !important
+				padding-bottom: 0.8rem
+				.owl-dot
+					span 
+						background: none
+						border: 1px solid #f2c73e 
+					&.active
+						span 
+							background: #f2c73e 
+// ........................................
+.home-news
+	background-image: url(../img/bg-house.png)
+	min-height: 500px
+	// background-attachment: fixed
+	// background-size: cover
+	.text
+		width: 50%
+		margin: 0 auto
+		text-align: center
+	h1 
+		padding-top: 5rem
+		span 
+			color: #dfb428 
+			margin-right: 1rem 
+		span.dk 
+			display: block
+			width: 100%
+			display: flex
+			justify-content: center 
+			margin-top: 0.5rem
+			&:after
+				display: block
+				content: ''
+				width: 90px
+				height: 4px
+				background: #dfb428
+				border-radius: 25px
+// /aaaaaaaaaaa
+.home-news
+	.item
+		i 
+			transition: 0.8s
+			font-size: 50px
+			&:hover
+				color: #dfb428 
+				transition: 0.8s
+		h1 
+			padding: 0
+		p
+
+
+

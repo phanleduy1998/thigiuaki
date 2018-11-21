@@ -1,0 +1,40 @@
+header
+	position: absolute
+	z-index: 100
+	width: 100%
+	.navbar
+		+pad(null 0)
+	.navbar-brand
+		img 
+			max-height: 2rem
+	+media-breakpoint-up(md)
+		.navbar-brand
+			img 
+				max-height: 3rem
+	.navbar-nav
+		.nav-item
+			.nav-link
+				margin-bottom: 2px
+				padding-left: 10px
+				color: white
+			&:hover,
+			&.active
+				.nav-link
+					background: #f2c73e 
+					border-radius: 25px
+
+	+media-breakpoint-up(md)
+		.navbar-nav
+			.nav-item
+				margin-right: 1.5px
+				.nav-link
+					color: white
+					padding: 3px 25px
+				&:hover,
+				&.active
+					.nav-link
+						background: #f2c73e 
+						border-radius: 25px
+
+
+	

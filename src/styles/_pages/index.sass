@@ -99,7 +99,8 @@
 	.item
 		i 
 			transition: 0.8s
-			font-size: 50px
+			font-size: 60px
+			margin-bottom: 3rem
 			&:hover
 				color: #dfb428 
 				transition: 0.8s
@@ -168,4 +169,111 @@
 				border-radius: 3px
 	+media-breakpoint-down(sm)
 		.item.vv 
+			margin-top: 5.5rem
+	+media-breakpoint-down(xs)
+		.item.vv 
 			margin-top: 1.5rem
+	+media-breakpoint-down(sm)
+		.text
+			a
+				margin-bottom: 0.5rem
+	+media-breakpoint-down(xs)
+		.text
+			a
+				margin-bottom: 0rem
+
+.home-feeback
+	background: #f4c93e
+	min-height: 500px
+	.feel
+		h1 
+			padding-top: 7rem
+			text-align: center
+			color: #000000 
+		p 
+			padding: 0rem 20rem
+			span.dk  
+				display: block
+				width: 100%
+				display: flex
+				justify-content: center 
+				margin-top: 0.5rem
+				&:after
+					display: block
+					content: ''
+					width: 90px
+					height: 4px
+					background: #927925
+					border-radius: 25px
+	+media-breakpoint-down(sm)
+		.feel
+			h1 
+			p 
+				padding: 0rem
+.home-feeback
+	figure
+		text-align: center
+		img 
+			border-radius: 50%
+			min-height: 10rem
+			overflow: hidden 
+			width: 200px
+			height: 200px
+	figcaption
+		&:hover
+			.ct
+				color: white
+			.ctt
+				box-shadow: 0px 3px 0px #927925 
+				transition: 0.5s all ease-in-out
+	+media-breakpoint-down(sm)
+		figure 
+			text-align: center
+		figcaption
+			.ct,.ctt
+				text-align: center
+.home-moving
+	.item
+		width: 100%
+		text-align: center
+		h1
+			padding-top: 10px
+			span 
+				display: block
+				width: 100%
+				display: flex
+				justify-content: center 
+				margin-top: 0.5rem
+				&:after
+					display: block
+					content: ''
+					width: 90px
+					height: 4px
+					background: #927925
+					border-radius: 25px
+.home-moving
+	.moving
+		margin-bottom: 3rem
+		i 
+			font-size: 100px
+		p
+	+media-breakpoint-down(md)
+		.moving
+			margin-bottom: 2rem
+			i 
+				font-size: 70px
+			p
+	+media-breakpoint-down(sm)
+		.moving
+			margin-bottom: 0rem
+			i 
+				font-size: 35px
+			p
+				font-size: 13px
+	+media-breakpoint-down(xs)
+		.moving
+			margin-bottom: 0rem
+			i 
+				font-size: 50px
+			p
+				font-size: 13px

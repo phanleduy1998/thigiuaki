@@ -6357,8 +6357,10 @@ header {
 .nen {
   background: black; }
 
-footer img {
-  max-width: 200px; }
+footer {
+  background: black; }
+  footer img {
+    max-width: 200px; }
 
 .home-slider .owl-carousel .item .title {
   background: #00000026;
@@ -6450,7 +6452,8 @@ footer img {
 
 .home-news .item i {
   transition: 0.8s;
-  font-size: 50px; }
+  font-size: 60px;
+  margin-bottom: 3rem; }
   .home-news .item i:hover {
     color: #dfb428;
     transition: 0.8s; }
@@ -6518,6 +6521,112 @@ footer img {
 
 @media (max-width: 767.98px) {
   .home-clients .item.vv {
+    margin-top: 5.5rem; } }
+
+@media (max-width: 575.98px) {
+  .home-clients .item.vv {
     margin-top: 1.5rem; } }
+
+@media (max-width: 767.98px) {
+  .home-clients .text a {
+    margin-bottom: 0.5rem; } }
+
+@media (max-width: 575.98px) {
+  .home-clients .text a {
+    margin-bottom: 0rem; } }
+
+.home-feeback {
+  background: #f4c93e;
+  min-height: 500px; }
+  .home-feeback .feel h1 {
+    padding-top: 7rem;
+    text-align: center;
+    color: #000000; }
+  .home-feeback .feel p {
+    padding: 0rem 20rem; }
+    .home-feeback .feel p span.dk {
+      display: block;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 0.5rem; }
+      .home-feeback .feel p span.dk:after {
+        display: block;
+        content: '';
+        width: 90px;
+        height: 4px;
+        background: #927925;
+        border-radius: 25px; }
+  @media (max-width: 767.98px) {
+    .home-feeback .feel p {
+      padding: 0rem; } }
+
+.home-feeback figure {
+  text-align: center; }
+  .home-feeback figure img {
+    border-radius: 50%;
+    min-height: 10rem;
+    overflow: hidden;
+    width: 200px;
+    height: 200px; }
+
+.home-feeback figcaption:hover .ct {
+  color: white; }
+
+.home-feeback figcaption:hover .ctt {
+  box-shadow: 0px 3px 0px #927925;
+  transition: 0.5s all ease-in-out; }
+
+@media (max-width: 767.98px) {
+  .home-feeback figure {
+    text-align: center; }
+  .home-feeback figcaption .ct, .home-feeback figcaption .ctt {
+    text-align: center; } }
+
+.home-moving .item {
+  width: 100%;
+  text-align: center; }
+  .home-moving .item h1 {
+    padding-top: 10px; }
+    .home-moving .item h1 span {
+      display: block;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 0.5rem; }
+      .home-moving .item h1 span:after {
+        display: block;
+        content: '';
+        width: 90px;
+        height: 4px;
+        background: #927925;
+        border-radius: 25px; }
+
+.home-moving .moving {
+  margin-bottom: 3rem; }
+  .home-moving .moving i {
+    font-size: 100px; }
+
+@media (max-width: 991.98px) {
+  .home-moving .moving {
+    margin-bottom: 2rem; }
+    .home-moving .moving i {
+      font-size: 70px; } }
+
+@media (max-width: 767.98px) {
+  .home-moving .moving {
+    margin-bottom: 0rem; }
+    .home-moving .moving i {
+      font-size: 35px; }
+    .home-moving .moving p {
+      font-size: 13px; } }
+
+@media (max-width: 575.98px) {
+  .home-moving .moving {
+    margin-bottom: 0rem; }
+    .home-moving .moving i {
+      font-size: 50px; }
+    .home-moving .moving p {
+      font-size: 13px; } }
 
 /*# sourceMappingURL=main.css.map */

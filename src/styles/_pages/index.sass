@@ -101,9 +101,10 @@
 			transition: 0.8s
 			font-size: 60px
 			margin-bottom: 3rem
-			&:hover
-				color: #dfb428 
-				transition: 0.8s
+			+media-breakpoint-up(sm)
+				&:hover
+					color: #dfb428 
+					transition: 0.8s
 		h1 
 			padding: 0
 		p
@@ -142,10 +143,11 @@
 					background: #f2c73e
 					border-radius: 25px 
 					transition: 0.8s
-					&:hover
-						background: #f2c73e7a 
-						transition: 0.8s 
-						color: #f2c73e
+					+media-breakpoint-up(sm)
+						&:hover
+							background: #f2c73e7a 
+							transition: 0.8s 
+							color: #f2c73e
 .home-clients
 	.item.vv
 		border: 3px solid #f4c93e 
@@ -167,6 +169,18 @@
 			&::-webkit-scrollbar-thumb
 				background-color: #f4c93e 
 				border-radius: 3px
+	+media-breakpoint-down(md)
+		.item.vv
+			.scrollbar
+				min-height: 380px
+	+media-breakpoint-down(sm)
+		.item.vv
+			.scrollbar
+				min-height: 490px
+	+media-breakpoint-down(xs)
+		.item.vv
+			.scrollbar
+				min-height: 250px
 	+media-breakpoint-down(sm)
 		.item.vv 
 			margin-top: 5.5rem
@@ -214,18 +228,17 @@
 	figure
 		text-align: center
 		img 
-			border-radius: 50%
-			min-height: 10rem
-			overflow: hidden 
+			border-radius: 50% 
 			width: 200px
 			height: 200px
 	figcaption
-		&:hover
-			.ct
-				color: white
-			.ctt
-				box-shadow: 0px 3px 0px #927925 
-				transition: 0.5s all ease-in-out
+		+media-breakpoint-up(sm)
+			&:hover
+				.ct
+					color: white
+				.ctt
+					box-shadow: 0px 3px 0px #927925 
+					transition: 0.5s all ease-in-out
 	+media-breakpoint-down(sm)
 		figure 
 			text-align: center
@@ -236,8 +249,10 @@
 	.item
 		width: 100%
 		text-align: center
-		h1
+		p 
+			margin-bottom: 2rem
 			padding-top: 10px
+		h1
 			span 
 				display: block
 				width: 100%
@@ -250,26 +265,37 @@
 					width: 90px
 					height: 4px
 					background: #927925
-					border-radius: 25px
+					border-radius: 25px 
+.home-moving
+	figure 
+		img 
+			filter: grayscale(100%)
+			min-height: 450px
+		&:hover
+			img 
+				filter: grayscale(0)
+				transition: 0.5s all ease-in-out
+//  asssssssssssssssssss
 .home-moving
 	.moving
 		margin-bottom: 3rem
 		i 
-			font-size: 100px
+			font-size: 80px
 		p
 	+media-breakpoint-down(md)
 		.moving
-			margin-bottom: 2rem
+			margin-bottom: 1rem
 			i 
-				font-size: 70px
+				font-size: 50px
 			p
+				margin: 0
 	+media-breakpoint-down(sm)
 		.moving
-			margin-bottom: 0rem
+			margin-bottom: 1rem
 			i 
-				font-size: 35px
+				font-size: 50px
 			p
-				font-size: 13px
+				font-size: 15px
 	+media-breakpoint-down(xs)
 		.moving
 			margin-bottom: 0rem

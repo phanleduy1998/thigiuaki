@@ -13,3 +13,13 @@ $(document).ready(function(){
 		}
 	})
 	});
+	$(window).on('scroll', function(){
+		if($(window).scrollTop()) {
+			$('header').addClass('nen');
+		}
+		else {
+			$('header').removeClass('nen');
+		}
+	});
+
+

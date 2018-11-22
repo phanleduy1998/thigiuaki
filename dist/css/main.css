@@ -6456,7 +6456,9 @@ footer img {
 
 .home-clients {
   background-image: url(../img/baner.png);
-  min-height: 500px; }
+  min-height: 500px;
+  background-attachment: fixed;
+  background-size: cover; }
   .home-clients .item h1 {
     color: white;
     padding-top: 5rem; }
@@ -6488,9 +6490,5 @@ footer img {
       background: #f2c73e7a;
       transition: 0.8s;
       color: #f2c73e; }
-  .home-clients .item .box {
-    width: 500px;
-    height: 500px;
-    background: red; }
 
 /*# sourceMappingURL=main.css.map */

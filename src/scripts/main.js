@@ -13,13 +13,42 @@ $(document).ready(function(){
 		}
 	})
 	});
-	$(window).on('scroll', function(){
-		if($(window).scrollTop()) {
-			$('header').addClass('nen');
-		}
-		else {
-			$('header').removeClass('nen');
-		}
-	});
+	// $(window).on('scroll', function(){
+	// 	if($(window).scrollTop()) 
+	
+	// 		$('header').addClass('nen');
+	// 	}
+	// 	else {
+	// 		$('header').removeClass('nen');
+	// 	}
+	// });
 
+// $(function(){
+// 	$(window).scroll(function(){
+// 		if($(window).scrollTop() > 1 )
+// 		{
+// 			$('header').addClass('nen');
+// 			$('.navbar-brand').addClass('maunen');
+// 			$('.nav-link').addClass('mauchu');
+		
+// 		}
+// 		else{
+// 			$('header').removeClass('nen');
+// 			$('.navbar-brand').removeClass('maunen');
+// 			$('.nav-link').removeClass('mauchu');
+// 		}
+// 	})
+// })
+$(function(){
+	$(window).scroll(function(){
+		if($(window).scrollTop() > 100 ){
+			$('header').addClass('nen')
+			$('.nav-link').addClass('mauchu')
+		}
+		else{
+			$('header').removeClass('nen')
+			$('.nav-link').removeClass('mauchu')
+		}
+	})
+})
 

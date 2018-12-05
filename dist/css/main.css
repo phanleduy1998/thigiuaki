@@ -6326,7 +6326,8 @@ header {
   position: absolute;
   z-index: 100;
   width: 100%;
-  position: fixed; }
+  position: fixed;
+  transition: 0.5s; }
   header .navbar {
     padding-right: 0;
     padding-left: 0; }
@@ -6350,12 +6351,19 @@ header {
       header .navbar-nav .nav-item .nav-link {
         color: white;
         padding: 3px 25px; }
-      header .navbar-nav .nav-item:hover .nav-link, header .navbar-nav .nav-item.active .nav-link {
+      header .navbar-nav .nav-item:hover, header .navbar-nav .nav-item.active {
         background: #f2c73e;
         border-radius: 25px; } }
 
 .nen {
-  background: black; }
+  background: rgba(255, 255, 255, 0.5);
+  transition: 0.5s; }
+
+.mauchu {
+  color: black !important; }
+
+.maunen {
+  background: blue; }
 
 footer {
   background: black; }

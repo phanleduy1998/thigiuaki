@@ -3,6 +3,7 @@ header
 	z-index: 100
 	width: 100%
 	position: fixed
+	transition: 0.5s
 	.navbar
 		+pad(null 0)
 	.navbar-brand
@@ -35,8 +36,12 @@ header
 					padding: 3px 25px
 				&:hover,
 				&.active
-					.nav-link
-						background: #f2c73e 
-						border-radius: 25px
+					background: #f2c73e 
+					border-radius: 25px
 .nen
-	background: black
+	background: rgba(255,255,255,0.5)
+	transition: 0.5s
+.mauchu
+	color: black !important
+.maunen 
+	background: blue
